@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section id="gal">
+        <div class="container">
+            <div class="row">
+                <img src="./img/img (4).jpg"class="img_nav" alt="">
+                <img src="./img/img (2).jpg"class="img_nav" alt="">
+                <img src="./img/img (3).jpg"class="img_nav"alt="">
+                <img src="./img/img (1).jpg"class="img_nav"alt="">
+            </div>
+        </div>
+
+        <div class="pop_up">
+            <span class="cross"><i class="fa-solid fa-x"></i></span>
+
+            <span class="arrow right"><i class="fa-solid fa-chevron-right"></i></span>
+            <span class="arrow left"><i class="fa-solid fa-chevron-left"></i></span>
+            <img class="preview" src="./img/img (4).jpg" alt="">
+        </div>
+    </section>
+
+     <section class="imgslider">
+     
+          <div class="container">
+            <div class="row">
+                <div  id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner text-center">
+                      <div class="carousel-item active">
+                        <img src="./img/img (4).jpg" class="img-fluid    w-100" alt="..." style="text-align: center;">
+                      </div>
+                      <div class="carousel-item ">
+                        <img src="./img/img (1).jpg" class="img-fluid    w-100" alt="..." style="text-align: center;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/img (2).jpg" class="img-fluid  w-100" alt="..." style="text-align: center;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/img (3).jpg" class="img-fluid  w-100" alt="..." style="text-align: center;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev  text-warning" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden ">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden ">Next</span>
+                    </button>
+                  
+                  </div>
+            </div>
+          </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="./app.js"></script>
+</body>
+</html>
